@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Laura Morera">
+  <title>Bookmark - Home</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="sass/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="site-header  py-1">
+    <nav class="navbar navbar-expand-lg bg-white mt-lg-4 ">
+      <div class="container">
+
+        <a class="navbar-brand" href="#"> <img src="img/logo-bookmark.svg" alt="" width="148" height="25"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight"
+          aria-controls="offcanvasNavbarLight">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbarLight"
+          aria-labelledby="offcanvasNavbarLight2Label">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel">
+              <img src="img/logo-bookmark-white.svg" alt="logo" width="148" height="25">
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav main-menu justify-content-lg-end flex-grow-1 text-uppercase">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-secondary" href="#">Login</a>
+              </li>
+            </ul>
+
+
+
+          </div>
+          <div class="offcanvas-footer d-lg-none">
+            <ul class="d-flex justify-content-center list-unstyled">
+              <li class="nav-item"><a href=""><img src="img/icon-facebook.svg" /></a> </li>
+              <li class="nav-item"><a href="#"><img src="img/icon-twitter.svg" /></a> </li>
+
+            </ul>
+          </div>
+        </div>
+
+
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="container p-lg-0 mt-5">
+    <div class="row  flex-column-reverse flex-md-row align-items-center">
+
+      <div class="col-12 col-md-6 text-center text-md-start ">
+        <h1 class="fs-1 lh-1 pb-3 pt-5 mt-5 pt-md-0 mt-md-0 ">A Simple Bookmark Manager</h1>
+
+        <p class="lead mb-5 text-black-50">A clean and simple internface to organize your favourite websites. Open a
+          new browser
+          tab
+          and see your sites load instantly. Try for free.</p>
+        <div class="d-grid gap-2 d-flex justify-content-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Get it on Chrome</button>
+          <button type="button" class="btn btn-light btn-lg px-4">Get it on Firefox</button>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-6  position-relative text-end">
+        <img class="img-fluid p-md-0 p-3 shadow" src="img/illustration-features-tab-1.svg" />
+        <div class=" bg-image position-absolute">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- 
+      <script src="js/jquery-3.6.0.min.js"></script>
+
+  <script>
+    $("#hamburger-icon").click(function () {
+      $("#hamburger-icon span").addClass("fa-xmark");
+
+    });
+
+  </script>-->
+
+</body>
+
+
+</html>

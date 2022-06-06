@@ -1,0 +1,172 @@
+$red: #FA5959;
+$secondary: $red;
+$primary: #5265E1;
+$offcanvas-bg-color: #2f354f;
+$h1-font-size: 3.5rem;
+$btn-border-width: 2px;
+$btn-padding-x: 2rem;
+$btn-font-size: 0.9rem;
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+
+$nav-link-hover-color: $secondary;
+$nav-link-color: $black;
+
+.btn {
+    // normal css
+    box-shadow: 0px 0.4rem 0.6rem 0 rgba($primary, 0.3) !important;
+
+    &:hover {
+        cursor: pointer;
+        border: 2px solid;
+        background-color: transparent !important;
+
+    }
+}
+
+.btn-primary {
+
+    &:hover {
+        color: $primary  !important;
+
+    }
+
+}
+
+.btn-secondary {
+    color: $white  !important;
+
+    &:hover {
+        color: $secondary  !important;
+        border-color: $secondary;
+
+    }
+
+}
+
+.btn-light {
+    &:hover {
+        color: $black  !important;
+        border-color: $black !important;
+
+    }
+
+}
+
+
+
+.navbar-toggler-icon {
+    background-image: url(../img/icon-hamburger.svg)
+}
+
+.offcanvas-header button {
+    background: url(../img/icon-close.svg) no-repeat;
+    background-size: 1.5em;
+    opacity: 1;
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+}
+
+.main-menu {
+    li {
+        margin: 0 2rem;
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+
+    @include media-breakpoint-down(sm) {
+
+
+        .nav-link {
+            color: $white  !important;
+            text-align: center;
+            font-size: 1.2em;
+
+        }
+
+        .nav-item {
+            border-top: 1px solid $white;
+            padding: 1rem 0;
+        }
+
+        .btn-secondary {
+            font-size: 1.1em;
+            color: $white  !important;
+            border: 2px solid $white  !important;
+            width: 100%;
+            background-color: transparent;
+            box-shadow: none !important;
+
+            &:hover {
+                background-color: $white  !important;
+                color: $black  !important;
+                border-color: $white  !important;
+
+            }
+
+        }
+
+
+
+    }
+
+}
+
+
+/*calcular acho vw en px*/
+@function get-vw($target) {
+    $vw-context: (1000*.01) * 1px;
+    @return ($target/$vw-context) * 1vw;
+}
+
+$window-width: get-vw(72px);
+
+.bg-image {
+    height: 75%;
+    width: 75%;
+    bottom: -20%;
+    border-bottom-left-radius: 100px;
+    z-index: -1;
+    background-color: $primary;
+    right: - $window-width*2;
+}
+
+
+
+@include media-breakpoint-up(lg) {
+    .navbar-expand-lg .offcanvas {
+        background-color: transparent !important;
+    }
+
+
+
+
+}
+
+@include media-breakpoint-up(md) {
+
+
+    .imgLeft {
+        position: relative;
+    }
+
+    .imgLeft>img {
+        position: absolute;
+        right: -15%;
+    }
+
+
+}
+
+
+
+
+
+
+//import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
