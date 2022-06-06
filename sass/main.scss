@@ -125,19 +125,8 @@ $nav-link-color: $black;
 }
 
 $window-width: get-vw(72px);
-/*
-.bg-image-r {
-    height: 75%;
-    width: 75%;
-    bottom: -20%;
-    border-bottom-left-radius: 100px;
-    z-index: -1;
-    background-color: $primary;
-    right: - $window-width*2;
-}*/
 
-div[class^='bg-image'],
-div[class*=' bg-image'] {}
+
 
 .bg-image-r {
     height: 75%;
@@ -146,7 +135,15 @@ div[class*=' bg-image'] {}
     border-bottom-left-radius: 100px;
     z-index: -1;
     background-color: $primary;
-    right: - $window-width*2;
+    right: - 12.5vw;
+
+    @include media-breakpoint-down(sm) {
+        & {
+            right: 0;
+        }
+    }
+
+
 }
 
 .bg-image-l {
@@ -162,6 +159,7 @@ div[class*=' bg-image'] {}
 
 
 #tabs-home {
+
     a {
         cursor: pointer;
     }
@@ -211,7 +209,55 @@ div[class*=' bg-image'] {}
 
 
 
+.cards {
 
+    .col {
+        margin-top: 5rem;
+
+        &:nth-child(2) {
+            margin-top: 10rem;
+
+            @include media-breakpoint-down(sm) {
+                & {
+                    margin-top: 5rem;
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            margin-top: 15rem;
+
+            @include media-breakpoint-down(sm) {
+                & {
+                    margin-top: 5rem;
+                }
+            }
+        }
+
+
+    }
+
+    & img {
+        width: 40%;
+        text-align: center;
+        margin: 2rem auto;
+    }
+
+    & .card-body {
+        padding-bottom: 3rem;
+    }
+
+    & .card-footer {
+        background-color: transparent;
+        border-top: none;
+        padding: 2rem 0;
+        background-image: url(../img/bg-dots.svg);
+        background-repeat: repeat-x;
+        background-position-x: center;
+    }
+
+
+}
 
 
 //import bootstrap
