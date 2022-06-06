@@ -6,6 +6,11 @@ $h1-font-size: 3.5rem;
 $btn-border-width: 2px;
 $btn-padding-x: 2rem;
 $btn-font-size: 0.9rem;
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $secondary;
+$accordion-icon-width: 2rem;
+$accordion-button-active-bg: transparent;
+$accordion-button-active-color: $primary;
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -259,6 +264,12 @@ $window-width: get-vw(72px);
 
 }
 
+
+.accordion {
+    & button:hover {
+        color: $secondary;
+    }
+}
 
 //import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
